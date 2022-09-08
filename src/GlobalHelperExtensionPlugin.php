@@ -9,19 +9,14 @@ class GlobalHelperExtensionPlugin extends Plugin{
         return [
             new \Twig_SimpleFunction(
                 'is_module_enabled',
-                function ($type,$slug) {
-                    return app(GlobalHelperExtension::class)->is_enabled('module',$slug);
+                function ($slug) {
+                    return is_module_installed($slug);
                 }
             ),
             new \Twig_SimpleFunction(
                 'is_extension_enabled',
-                function ($type,$slug) {
-                    return app(GlobalHelperExtension::class)->is_enabled('extension',$slug);
-                }
-            ),new \Twig_SimpleFunction(
-                'isActive',
                 function ($slug) {
-                    return app(GlobalHelperExtension::class)->is_enabled('module',$slug);
+                    return is_extension_installed($slug);
                 }
             )
         ];
