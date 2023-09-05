@@ -1,0 +1,88 @@
+#mapTitle h3 {
+  color: #5e6278;
+}
+#mapTitle h3 span {
+  color: #bcb7c3;
+}
+#mapFilters div[data-name][data-name=street] .dropdown-toggle {
+  width: 14rem;
+}
+#mapFilters div[data-name][data-name=road] .dropdown-toggle {
+  width: 13rem;
+}
+#mapFilters div[data-name] .dropdown-toggle {
+  border: 1px solid transparent;
+  background-color: #edf1f5;
+  color: #b2b3c4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#mapFilters div[data-name] .dropdown-toggle:hover {
+  background-color: #f7f9fb;
+}
+#mapFilters div[data-name] .dropdown-toggle:focus {
+  background-color: #f7f9fb;
+}
+#mapFilters div[data-name] .dropdown-toggle.active {
+  background-color: #ade1f5;
+  color: #fff;
+}
+#mapFilters div[data-name] .dropdown-toggle.active:after {
+  color: #fff;
+}
+#mapFilters div[data-name] .dropdown-menu {
+  max-height: 22rem;
+}
+#mapFilters div[data-name] .dropdown-menu .dropdown-item {
+  cursor: pointer;
+  font-weight: 100;
+  color: #bcb7c3;
+}
+#mapFilters div[data-name] .dropdown-menu .dropdown-item.active {
+  color: #fff;
+}
+#mapFilters div[data-name] ::-webkit-scrollbar {
+  width: 5px;
+}
+#mapFilters div[data-name] ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#mapFilters div[data-name] ::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+  border-radius: 50rem;
+}
+#mapFilters div[data-name] ::-webkit-scrollbar-thumb:hover {
+  background: #e6e6e6;
+  border-radius: 50rem;
+}
+#mapFilters .layout-btn-wrapper button:not(:last-child) {
+  background-color: unset;
+}
+#mapFilters .layout-btn-wrapper a.active svg #Rectangle_1779, #mapFilters .layout-btn-wrapper a.active svg #Path_6241, #mapFilters .layout-btn-wrapper a.active svg #Rectangle_1782, #mapFilters .layout-btn-wrapper a.active svg #Path_6245 {
+  stroke: #3e9dff;
+}
+#mapFilters .layout-btn-wrapper a.active svg #Path_6240, #mapFilters .layout-btn-wrapper a.active svg #Path_6244 {
+  fill: #75cbff;
+}
+#mapFilters .layout-btn-wrapper a.active svg #Group_4772 line, #mapFilters .layout-btn-wrapper a.active svg #Group_4773 line {
+  stroke: #75cbff;
+}
+#mapFilters .layout-btn-wrapper a:not(.active):hover svg #Path_6240, #mapFilters .layout-btn-wrapper a:not(.active):hover svg #Path_6244 {
+  fill: #75cbff;
+}
+#mapFilters .layout-btn-wrapper a:not(.active):hover svg #Group_4772 line, #mapFilters .layout-btn-wrapper a:not(.active):hover svg #Group_4773 line {
+  stroke: #75cbff;
+}
+#mapFilters .layout-btn-wrapper a svg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.datatable-cell span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.datatable-row:hover .datatable-cell {
+  background-color: #f3f6f9 !important;
+}
