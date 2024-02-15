@@ -38,4 +38,9 @@ trait RedirectBackTrait
         return $this->redirectBack($withInput)->with('error', ['message' => $message]);
     }
 
+    public function redirectTo(string $redirectPath)
+    {
+        return $this->redirect->to($redirectPath);
+    }
+
 }
