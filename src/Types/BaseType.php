@@ -4,8 +4,9 @@ declare(strict_types=1);
 namespace Visiosoft\GlobalHelperExtension\Types;
 
 use ReflectionClass;
+use Visiosoft\GlobalHelperExtension\Interfaces\BaseTypeInterface;
 
-abstract class BaseType
+abstract class BaseType implements BaseTypeInterface
 {
 
     public function setIfNotEmpty($setter, $value)
